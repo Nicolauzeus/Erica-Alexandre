@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Érica Alexandre - Cabelereira Profissional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/perfil.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Érica Alexandre</h1>
+                <h2>Cabelereira Profissional</h2>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#fotos" class="nav-link">Galeria</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" style="background-image: url('assets/images/hero.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-text">Transformando beleza em arte</p>
+                <a href="#contato" class="cta-button pulse">Agende sua sessão</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-with-bg">
+        <div class="container">
+            <h2 class="section-title"><span>Sobre Mim</span></h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Olá, eu sou <strong>Érica Alexandre</strong>, especialista apaixonada por tranças femininas de todos os tipos e estilos.</p>
+                    <p>Acredito que cada mulher carrega uma beleza única, e as tranças são uma forma poderosa de expressar identidade, cultura e autoestima.</p>
+                    <p>Meu trabalho é dedicado a valorizar mulheres de todos os tipos de cabelo, criando tranças personalizadas que respeitam a textura natural e o desejo de cada cliente.</p>
+                    <p>Mais do que um penteado, busco proporcionar uma experiência acolhedora, onde cada mulher se sinta ouvida, respeitada e ainda mais linda.</p>
+                    <p>Se você quer realçar sua beleza com tranças, seja para o dia a dia ou para um momento especial, conte comigo para cuidar de você com carinho e profissionalismo!</p>
+                </div>
+                <div class="sobre-imagem">
+                    <div class="image-frame">
+                        <img src="assets/images/perfil.jpeg" alt="Érica Alexandre" class="profile-img" onclick="abrirModalPerfil()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="fotos" class="section-with-bg">
+        <div class="container">
+            <h2 class="section-title"><span>Galeria de Fotos</span></h2>
+            <p class="section-description">Alguns dos meus trabalhos em fotos</p>
+            
+            <div class="photo-gallery">
+                <!-- Foto 1 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img1.jpeg', 'Dread Lokk')">
+                    <img src="assets/images/img1.jpeg" alt="Dread Lokk">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Dread Lokk</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 2 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img2.jpeg', 'Codolete com cachos')">
+                    <img src="assets/images/img2.jpeg" alt="Codolete com cachos">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Cordolete com cachos</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 3 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img3.jpeg', 'Bobi com viradas e cachos')">
+                    <img src="assets/images/img3.jpeg" alt="Bobi com viradas e cachos">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Bobi com viradas e cachos</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 4 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img4.jpeg', 'Bobi com viradas americana')">
+                    <img src="assets/images/img4.jpeg" alt="Bobi com viradas americana">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Bobi com viradas americana</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 5 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img5.jpeg', 'Bobi enrolado')">
+                    <img src="assets/images/img5.jpeg" alt="Bobi enrolado">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Bobi enrolado</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 6 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img6.jpeg', 'French Curls braids')">
+                    <img src="assets/images/img6.jpeg" alt="French Curls braids">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>French Curls braids</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 7 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img7.jpeg', 'Bobi braids')">
+                    <img src="assets/images/img7.jpeg" alt="Bobi braids">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Bobi braids</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 8 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img8.jpeg', 'Nagô')">
+                    <img src="assets/images/img8.jpeg" alt="Nagô">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Nagô</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto 9 -->
+                <div class="photo-item" onclick="openLightbox('assets/images/img9.jpeg', 'Bobi com viradas')">
+                    <img src="assets/images/img9.jpeg" alt="Bobi com viradas">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <h3>Bobi com viradas</h3>
+                            <p>Clique para ampliar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title"><span>Entre em Contato</span></h2>
+            <p class="section-description">Agende seu horário ou tire suas dúvidas</p>
+            
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(244) 935728868</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:ericaalexandre044@gmail.com">ericaalexandre044@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Acarape, Ceará, Brasil</p>
+                    </div>
+
+                </div>
+                
+<form class="contato-form" onsubmit="enviarWhatsApp(event)">
+    <div class="form-group">
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" required>
+    </div>
+
+    <div class="form-group">
+        <label for="mensagem">Sua mensagem:</label>
+        <textarea id="mensagem" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">
+        <span>Enviar Mensagem</span>
+        <i class="fas fa-paper-plane"></i>
+    </button>
+</form>
+
+<script>
+  function enviarWhatsApp(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value.trim();
+    const mensagem = document.getElementById('mensagem').value.trim();
+
+    if (!nome || !mensagem) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const texto = `Olá, sou um cliente, vi o teu portfólio e estou interessado nos teus serviços, meu nome é ${nome}%0AMensagem: ${mensagem}`;
+    const numero = "244935728868"; // Número da Érica com DDI
+
+    const url = `https://wa.me/${numero}?text=${texto}`;
+    window.open(url, '_blank');
+  }
+</script>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Érica Alexandre</h3>
+                    <p>Cabelereira Profissional</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#fotos">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Érica Alexandre - Cabelereira Profissional. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://nicolauzeus.vercel.app/" target="_blank">Nicolau Zeus</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Modal da imagem de perfil -->
+<div id="modalPerfil" class="modal-perfil" style="display:none;">
+    <span class="close-modal" onclick="fecharModalPerfil()">&times;</span>
+    <img class="modal-content-perfil" id="imgModalPerfil">
+</div>
+
+<script>
+function abrirModalPerfil() {
+  document.getElementById('modalPerfil').style.display = 'flex';
+  document.getElementById('imgModalPerfil').src = 'assets/images/perfil.jpeg';
+}
+function fecharModalPerfil() {
+  document.getElementById('modalPerfil').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
